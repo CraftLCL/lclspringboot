@@ -73,7 +73,7 @@ public class HelloController {
 
 
     /**
-     * @Transactional不能用于注释private方法，代理生成器会自动忽略它
+     *  @ Transactional不能用于注释private方法，代理生成器会自动忽略它
      * @param name
      * @return
      */
@@ -96,6 +96,7 @@ public class HelloController {
             role.setPrivileges(privileges);
             roleDao.save(role);
         }
+
         return role;
 
     }
